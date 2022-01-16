@@ -1,5 +1,4 @@
 import type { AppProps } from "next/app";
-import React from "react";
 import "reset-css";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import PlayerLayout from "../components/playerLayout";
