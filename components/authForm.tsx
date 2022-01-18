@@ -1,4 +1,4 @@
-import { Box, Flex } from '@chakra-ui/layout';
+import { Box, Flex, Text } from '@chakra-ui/layout';
 import { Button, Input } from '@chakra-ui/react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -20,7 +20,7 @@ const AuthForm = ({ mode }: { mode: "signin" | "signup" }) => {
     return (
         <Box height="100vh" width="100vw" bg="black">
             <Flex justify="center" align="center" height="100px">
-                hello
+                <Text fontSize="32px" color="white">KM Player</Text>
             </Flex>
             <Flex justify="center" align="center" height="calc(100vh - 100px)">
                 <form onSubmit={submitHandler}>
