@@ -18,7 +18,6 @@ const signup = async (req: NextApiRequest, res: NextApiResponse) => {
             },
         });
     } catch (e) {
-        console.log(e);
         res.status(401);
         res.json({ error: "User already exists." });
         return;

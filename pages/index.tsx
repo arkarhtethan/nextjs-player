@@ -1,9 +1,18 @@
-import type { NextPage } from 'next'
+import type { NextPage } from "next";
+import GradientLayout from "../components/gradientLayout";
 
 const Home: NextPage = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <GradientLayout
+      roundedImage
+      color="red"
+      subtitle="profile"
+      title="Kaung Myat Han"
+      description="15 public playlists."
+    >
+      Home
+    </GradientLayout>
+  );
+};
 
-export default Home
+export default Home;

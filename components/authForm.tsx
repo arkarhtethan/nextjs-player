@@ -24,8 +24,8 @@ const AuthForm = ({ mode }: { mode: "signin" | "signup" }) => {
             </Flex>
             <Flex justify="center" align="center" height="calc(100vh - 100px)">
                 <form onSubmit={submitHandler}>
-                    <Input placeholder="email" type="email" onChange={e => setEmail(e.target.value)} marginY="20px" />
-                    <Input placeholder="password" type="password" onChange={e => setPassword(e.target.value)} marginY="20px" />
+                    <Input color="white" placeholder="email" type="email" onChange={e => setEmail(e.target.value)} marginY="20px" />
+                    <Input color="white" placeholder="password" type="password" onChange={e => setPassword(e.target.value)} marginY="20px" />
                     <Button type="submit" color="white" bg="green.500" isLoading={isLoading} sx={{
                         '&:hover': {
                             bg: 'green.300'
